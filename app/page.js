@@ -1,103 +1,78 @@
 import Image from "next/image";
-
+import AwardSection from "./components/AwardSection";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Carousel from "./components/Carousel";
+import StatsBar from "./components/StatsBar";
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+  <div className="min-h-60 mb-12 relative bg-gradient-to-r py-12 from-[#0D1825] to-[#1F3044] flex px-16">
+    <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-4 tracking-widest "> Precise. Swift.   Efficient.</p>
+      <div className=" flex justify-between items-center lg:gap-x-24">
+        <div className="mt-8 space-y-2 lg:w-1/2 max-lg:text-center">
+        <h4 className="uppercase text-xs tracking-widest font-bold leading-8 text-white">welcome to hawkes legal</h4>
+        <h1 className="lg:text-5xl text-2xl text-white capitalize leading-14">We provide the best possible <span className="text-[#CB935D] italic font-bold" >Legal Services</span></h1>
+        <p className="text-white text-xs font-light leading-7 max-w-sm border-gray-200 pb-5 mb-5">
+         We provide clear, strategic legal solutions to help you navigate challenges, protect your interests, and achieve lasting results.
+        </p>
+        <button className="bg-[#CB935D] text-white px-6 py-3 text-xs w-60 h-12 hover:bg-[#b27a4c] transition duration-300 capitalize">
+          Explore
+        </button> 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <span className="w-1/2 max-lg:hidden bg-[url(/hero.png)] bg-cover min-h-[400px] bg-no-repeat flex my-auto">
+        </span>
+      </div>
+      {/* <span className="absolute right-0 top-0 w-96 px-6 text-white text-[10px]">Legal issues can feel overwhelming but with the right team by your side, they don’t have to be. At Hawkes Legal, we combine deep legal expertise with a personal, client-first approach to help you navigate life’s challenges with clarity and confidence. We’re here to guide you, advocate for you, and deliver results that matter.</span> */}
     </div>
+
+    <div className="lg:px-16 px-4 py-10 space-y-10 bg-gray-100">
+      <AwardSection
+        imageSrc="/award.png"
+        imageAlt="Award Image"
+        imagePosition="left"
+        title="Award Winning Firm"
+        description="At Hawkes Legal, we take pride in our team’s dedication to delivering exceptional legal solutions. Our award-winning approach has earned us a reputation for excellence, and we continue to strive for innovation and success in every case we take on. Our awards and accolades are a testament to our commitment to our clients and our passion for achieving the best possible outcomes."
+      />
+      <AwardSection
+        imageSrc="/privacy.png"
+        imageAlt="Award Image"
+        imagePosition="left"
+        title="Your Privacy, Our Priority"
+        description="At Hawkes Legal, we understand the importance of discretion and confidentiality. Our private clients receive personalized attention and tailored legal solutions, ensuring their sensitive matters are handled with utmost care and professionalism. We prioritize your privacy and work diligently to protect your interests, providing a safe and trusted environment for all your legal needs."
+      />
+      <AwardSection
+        imageSrc="/legal.png"
+        imageAlt="Award Image"
+        imagePosition="left"
+        title="Legal Protection"
+        description="At Hawkes Legal, we believe that legal protection is a fundamental right. Our experienced team provides robust and proactive legal solutions to safeguard your personal and professional interests. From contract negotiations to dispute resolution, we offer comprehensive legal protection to give you peace of mind and confidence in your endeavors. "
+      />
+    </div>
+    <div className="px-16 flex flex-col gap-y-6 pt-36 relative" id="practice-areas">
+      <Image src='/practice.png' width={440} height={240}  className="absolute lg:size-60 max-lg:size-52 -top-8 object-contain right-0"/>
+      <span className="space-y-2 max-lg:text-center">
+      <h4 className="lg:text-3xl max-lg:text-xl  max-lg:font-bold">Our Practice Areas</h4>
+      <p className="lg:text-xs max-lg:text-lg">Explore our core areas of legal expertise</p>
+      </span>
+      <Carousel />  
+    </div>
+  
+  <div className="px-16 py-10 space-y-12">
+    {/* <StatsBar /> */}
+  </div>
+    <div className="bg-[#1E2E45] text-center flex flex-col py-12 items-center justify-center text-white ">
+      <span className="max-w-xl space-y-7 max-lg:px-4">
+        <h4 className="lg:text-5xl max-lg:text-3xl font-semibold capitalize">Schedule A Consultation</h4>
+        <p className="text-sm font-light leading-8">Let’s talk about your legal needs. Whether you're facing a dispute, signing an agreement, or protecting your assets, we’re here to help.</p>
+        <Link href='/contact' className="bg-[#CB935D] text-white px-6 py-3 text-xs w-60 h-12 hover:bg-[#b27a4c] transition duration-300 uppercase">
+            Contact Us
+          </Link> 
+
+      </span>
+    </div>
+    </>
   );
 }
