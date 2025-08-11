@@ -10,10 +10,10 @@ const Footer = () => {
           <Image src='/logo.svg' width={60} height={60} className='w-44 h-32 lg:-ms-12 max-lg:mx-auto' />
             <div className='flex max-lg:flex-wrap max-lg:leading-12 items-center gap-x-9 text-xs'>
               <Link href='/'>Home</Link>
-            <Link href='/'>About Us</Link>
-            <Link href='/'>Team</Link>
-            <Link href='/'>Blog</Link>
-            <Link href='/'>Contact</Link>
+            <Link href='/about'>About Us</Link>
+            <Link href='/team'>Team</Link>
+            <Link href='/team'>Blog</Link>
+            <Link href='/contact'>Contact</Link>
             </div>
         </span>
         <span className='space-y-4 w-60 flex flex-col justify-center mt-12'>
