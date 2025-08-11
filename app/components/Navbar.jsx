@@ -20,9 +20,9 @@ const Navbar = () => {
   return (
     <nav className="flex h-24 items-center justify-between px-6 md:px-16 bg-gradient-to-r from-[#0D1825] to-[#1F3044] text-white">
       {/* Logo */}
-      <div>
+      <Link href='/'>
         <Image src="/logo.svg" alt="Logo" width={100} height={100} />
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-x-12 text-sm">
