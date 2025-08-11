@@ -1,94 +1,3 @@
-// "use client"
-// import Slider from "react-slick";
-// import Image from "next/image";
-// import SampleNextArrow from "./NextArrow";
-// import SamplePrevArrow from "./PrevArrow";
-// const slides = [
-//   {
-//     title: "REAL ESTATE",
-//     description: "",
-//     image: "/realestate.png"
-//   },
-//       {
-//     title: "REGULATORY / COMPLIANCE",
-//     description: "",
-//     image: "/regulatory.png"
-//   },
-//   {
-//     title: "COMMERCIAL PRACTICE",
-//     description: "",
-//     image: "/commerce.png"
-//   },
-//     {
-//     title: "E-Commerce",
-//     description: "",
-//     image: "/e-com.png"
-//   },
-//   {
-//     title: "Enviroment",
-//     description: "",
-//     image: "/enviroment.png"
-//   },
-//   {
-//     title: "DISPUTE RESOLUTION",
-//     description: "",
-//     image: "/dispute.png"
-//   },
-//   {
-//     title: "ENERGY",
-//     description: "",
-//     image: "/energy.png"
-//   }
-// ];
-
-
-
-
-
-// export default function Carousel() {
-//  const settings = {
-//     // dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     // nextArrow:SampleNextArrow,
-//     // prevArow:SamplePrevArrow,
-//     responsive: [
-//       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-//       { breakpoint: 640, settings: { slidesToShow: 1 } },
-//     ],
-//   };
-
-//   return (
-//      <div className="p-4 bg-gray-100">
-//       <Slider {...settings}>
-//         {slides.map((slide, idx) => (
-//           <div key={idx} className="px-2 flex flex-col items-center w-23 h-28">
-//             <div className="relative h-80 rounded overflow-hidden">
-//               <Image
-//                 src={slide.image}
-//                 alt={slide.title}
-//                 fill
-//                 loading="eager" // avoid lazy load issues with react-slick
-//                 priority
-//                 className="object-cover"
-//               />
-//                  <div className="absolute bottom-5 left-0 right-0 text-white p-2">
-//                   {slide.description && (
-//                     <p className="text-white text-center text-xs mb-4">{slide.description}</p>
-//                   )}
-//                <h4 className="text-orange-400 text-sm uppercase text-center font-bold">{slide.title}</h4>
-//              </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }
-
 "use client";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -121,7 +30,7 @@ const slides = [
 function SampleNextArrow({ onClick }) {
   return (
     <button
-      className="absolute -bottom-12 lg:right-12 left-1/2  translate-x-4 bg-white border border-orange-500 p-2 rounded-full shadow hover:bg-orange-500 hover:text-white transition"
+      className="absolute -bottom-12 lg:right-12 max-lg:left-1/2  translate-x-4 bg-white border border-orange-500 p-2 rounded-full shadow hover:bg-orange-500 hover:text-white transition"
       onClick={onClick}
     >
       <ChevronRight size={18} />

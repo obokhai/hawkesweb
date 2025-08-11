@@ -19,7 +19,7 @@ House, Lagos, Nigeria.</span>
         <section className='flex mb-4 flex-col items-center justify-center gap-y-2'>
             <h4 className='capitalize lg:text-4xl text-2xl font-bold'>Leave us a message</h4>
             <p className='text-orange-300 tracking-wide'>We would get back to you</p>
-            <form className="w-full lg:max-w-2xl mx-auto mt-6 flex flex-col gap-y-6 ">
+            <form className="w-full lg:max-w-2xl max-w-lg mx-auto mt-6 flex flex-col gap-y-6 ">
           <div className="flex gap-x-8 ">
             <div className="flex-1 flex border-b border-gray-300 flex-col">
               <label className="text-xs text-gray-500 mb-1 ps-2">Full Name</label>
