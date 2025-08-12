@@ -68,19 +68,19 @@ export default function Carousel() {
     <div className="p-4">
       <Slider {...settings}>
         {slides.map((slide, idx) => (
-          <div key={idx} className="px-2">
-            <div className="relative h-80 rounded overflow-hidden shadow-lg group">
+          <div key={idx} className={`px-2`}>
+            <div className={`relative h-80 border-0 overflow-hidden group`}>
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
-                className="object-cover"
+                className="object-cover h-80 w-fit"
               />
               {/* Dark overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t "></div>
 
               {/* Text */}
-              <div className="absolute bottom-5 left-0 right-0 px-4 text-center">
+              <div className="absolute bottom-5 left-0 right-0 px-4 hover:text-white text-center">
                 {slide.description && (
                   <p className="text-white text-xs mb-3">{slide.description}</p>
                 )}

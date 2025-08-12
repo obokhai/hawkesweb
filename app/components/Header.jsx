@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Breadcrumbs from './Breadcrumbs'
 
 const Header = ({  title,
   description,
@@ -9,7 +10,8 @@ const Header = ({  title,
 }) => {
   return (
     <div className="relative flex max-lg:flex-col items-center min-h-80 bg-gradient-to-r from-[#0D1825] justify-center to-[#1F3044] px-16 py-8 overflow-hidden">
-      <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-4 left-16 tracking-widest "> Precise. Swift.   Efficient.</p>
+        <Breadcrumbs/>
+      <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-0 left-16 tracking-widest "> Precise. Swift.   Efficient.</p>
        <Image
           src='/header-img.png'
           alt="Section background"

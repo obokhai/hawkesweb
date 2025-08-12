@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
   <div className="min-h-60 mb-12 relative bg-gradient-to-r py-12 from-[#0D1825] to-[#1F3044] flex px-16">
-    <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-4 tracking-widest "> Precise. Swift.   Efficient.</p>
+    <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-0 tracking-widest "> Precise. Swift.   Efficient.</p>
       <div className=" flex justify-between items-center lg:gap-x-24">
         <div className="mt-8 space-y-2 lg:w-1/2 max-lg:text-center">
         <h4 className="uppercase text-xs tracking-widest font-bold leading-8 text-white">welcome to hawkes legal</h4>
