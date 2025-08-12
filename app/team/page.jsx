@@ -11,14 +11,14 @@ const teamMembers = [
   { name: "CHINONYELUM IGBOEKWE", url: "/team/chinonyelum" },
   { name: "VICTORY OSAREME ISEGOHIMHEN", url: "/team/victory" },
   { name: "OPRITE PEPPLE ROWLAND", url: "/team/oprite" },
-  { name: "AANOULUWAPO AWODEINDE", url: "/team/aanoluwa" },
+  { name: "AANOULUWAPO AWODEINDE", url: "/team/aanu0luwa" },
 ];
 
 const Team = () => {
   return (
     <>
       <Header
-        title="Our Team"
+        title="Our Team"  
         description="Our team is made up of experienced, dedicated legal professionals who are passionate about delivering exceptional service. At Hawkes, we work collaboratively to provide clients with clear advice and strong representation."
         imageSrc="/about-bg.png"
         showBorder={true}
