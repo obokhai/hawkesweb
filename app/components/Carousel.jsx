@@ -7,7 +7,7 @@ const slides = [
   {
     title: "ENERGY",
     description:
-      "Energy projects are increasingly complex and highly regulated. We advise on regulatory compliance, project development, and energy-related transactions.",
+      "",
     image: "/energy.png",
   },
   {
