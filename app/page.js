@@ -11,18 +11,18 @@ export default function Home() {
   <div className="min-h-60 mb-12 relative bg-gradient-to-r py-12 from-[#0D1825] to-[#1F3044] flex px-16">
     <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-0 tracking-widest "> Precise. Swift.   Efficient.</p>
       <div className=" flex justify-between items-center lg:gap-x-24">
-        <div className="mt-8 space-y-2 lg:w-1/2 max-lg:text-center">
-        <h4 className="uppercase text-xs tracking-widest font-bold leading-8 text-white">welcome to hawkes legal</h4>
+        <div className="mt-8 space-y-2 lg:w-2/4 max-lg:text-center">
+        <h4 className="uppercase text-sm tracking-widest font-light leading-8 text-white">welcome to hawkes legal</h4>
         <h1 className="lg:text-5xl text-2xl text-white capitalize leading-14">We provide the best possible <span className="text-[#CB935D] italic font-bold" >Legal Services</span></h1>
         <p className="text-white text-xs font-light leading-7 max-w-sm border-gray-200 pb-5 mb-5">
          We provide clear, strategic legal solutions to help you navigate challenges, protect your interests, and achieve lasting results.
         </p>
-        <button className="bg-[#CB935D] text-white px-6 py-3 text-xs w-60 h-12 hover:bg-[#b27a4c] transition duration-300 capitalize">
+        <button className="bg-[#CB935D] text-white px-6 py-3 text-sm tracking-wideest w-60 h-12 hover:bg-[#b27a4c] transition duration-300 capitalize">
           Explore
         </button> 
 
         </div>
-        <span className="w-1/2 max-lg:hidden bg-[url(/hero.png)] bg-cover min-h-[400px] bg-no-repeat flex my-auto">
+        <span className="w-2/4 max-lg:hidden bg-[url(/hero.png)] bg-cover min-h-[400px] rounded-xl bg-no-repeat flex my-auto">
         </span>
       </div>
       {/* <span className="absolute right-0 top-0 w-96 px-6 text-white text-[10px]">Legal issues can feel overwhelming but with the right team by your side, they don’t have to be. At Hawkes Legal, we combine deep legal expertise with a personal, client-first approach to help you navigate life’s challenges with clarity and confidence. We’re here to guide you, advocate for you, and deliver results that matter.</span> */}
@@ -39,7 +39,7 @@ export default function Home() {
       <AwardSection
         imageSrc="/privacy.png"
         imageAlt="Award Image"
-        imagePosition="left"
+        imagePosition="right"
         title="Your Privacy, Our Priority"
         description="At Hawkes Legal, we understand the importance of discretion and confidentiality. Our private clients receive personalized attention and tailored legal solutions, ensuring their sensitive matters are handled with utmost care and professionalism. We prioritize your privacy and work diligently to protect your interests, providing a safe and trusted environment for all your legal needs."
       />
@@ -53,9 +53,9 @@ export default function Home() {
     </div>
     <div className="px-16 flex flex-col gap-y-6 pt-36 relative" id="practice-areas">
       <Image src='/practice.png' width={440} height={240}  className="absolute lg:size-60 max-lg:size-52 -top-8 object-contain right-0"/>
-      <span className="space-y-2 max-lg:text-center">
-      <h4 className="lg:text-3xl max-lg:text-xl  max-lg:font-bold">Our Practice Areas</h4>
-      <p className="lg:text-xs max-lg:text-lg">Explore our core areas of legal expertise</p>
+      <span className="space-y-2 max-lg:text-center lg:mb-8">
+      <h4 className="lg:text-5xl max-lg:text-xl heading  lg:font-bold">Our Practice Areas</h4>
+      <p className="lg:text-sm max-lg:text-lg">Explore our core areas of legal expertise</p>
       </span>
       <Carousel />  
     </div>

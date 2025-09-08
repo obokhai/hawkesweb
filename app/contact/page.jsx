@@ -6,7 +6,7 @@ const Contact = () => {
     <>
         <Header title="Contact Us" description="Have  a question or need legal support? We're here to help. Reach out to the Hawkes team to schedule a consultation or get more information about our services." />
         <div className='flex max-lg:flex-col-reverse max-lg:items-center justify-center gap-x-14 py-14 '>
-            <div className='flex flex-col gap-y-4 lg:items-start lg:ps-44 w-ful lg:w-1/2 max-lg:mt-5'>
+            <div className='flex flex-col gap-y-4 lg:items-end lg:ps-44 w-ful lg:w-1/2 max-lg:mt-5'>
                 <span className='flex gap-x-2 text-xs items-center'><img src='/mail.png' /> info@hawkeslegal.com</span>
                 <span className='flex gap-x-2 text-xs items-center'><img src='/phone.png' /> (+234) 08125540672, 020 1 3427086</span>
             </div>

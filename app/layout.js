@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${raleway.variable}  antialiased`}
+        className={` ${raleway.variable} ${cormo.variable} antialiased`}
       >
         <Navbar />
         {children}

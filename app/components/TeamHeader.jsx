@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Breadcrumbs from './Breadcrumbs'
 
-const Header = ({  title,
+const TeamHeader = ({  title,
   description,
   showBorder = true,
   borderColor = "border-gray-300", // allow custom border color
@@ -10,7 +10,7 @@ const Header = ({  title,
 }) => {
   return (
     <div className="relative flex max-lg:flex-col items-center min-h-80 bg-gradient-to-r from-[#0D1825] justify-center to-[#1F3044] px-16 py-8 overflow-hidden">
-        {/* <Breadcrumbs/> */}
+        <Breadcrumbs/>
       <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-0 left-16 tracking-widest "> Precise. Swift.   Efficient.</p>
        <Image
           src='/header-img.png'
@@ -20,16 +20,16 @@ const Header = ({  title,
           style={{ zIndex: 0 }}
         />
         <span className='flex justify-center items-center gap-x-4'>
-            <h4 className='text-white text-6xl mx-auto leading-16 heading font-serif font-semibold'>{title}</h4>
-              {showBorder && (
+            <h4 className='text-white text-6xl mx-auto text-center leading-16 heading font-serif font-semibold'>{title}</h4>
+              {/* {showBorder && (
           <div className={`mx-8 ${borderHeight} border-l max-lg:hidden ${borderColor}`}></div>
-        )}
-           <div className="flex-1 max-lg:hidden">
+        )} */}
+           {/* <div className="flex-1 max-lg:hidden">
           <p className="text-white text-[10px] w-[400px] tracking-wider leading-6">{description}</p>
-        </div>
+        </div> */}
         </span>
     </div>
   )
 }
 
-export default Header
+export default TeamHeader

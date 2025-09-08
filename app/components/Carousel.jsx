@@ -65,7 +65,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="p-4">
+    <div className="lg:-ml-8 max-lg:p-4">
       <Slider {...settings}>
         {slides.map((slide, idx) => (
           <div key={idx} className={`px-2`}>

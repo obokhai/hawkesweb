@@ -18,7 +18,7 @@ const Team = () => {
   return (
     <>
       <Header
-        title="Our Team"  
+        title="Our Team"    
         description="Our team is made up of experienced, dedicated legal professionals who are passionate about delivering exceptional service. At Hawkes, we work collaboratively to provide clients with clear advice and strong representation."
         imageSrc="/about-bg.png"
         showBorder={true}
