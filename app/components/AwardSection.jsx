@@ -13,7 +13,7 @@ export default function AwardSection({
       {isLeft && (
         <div className="flex-shrink-0 ">
           <div className="bg-[#22314a] w-40 h-40 max-lg:mb-6 flex items-start lg:items-center lg:justify-center lg:pe-12">
-            <Image src={imageSrc} alt={imageAlt} width={150} height={100} className="w-full h-full" />
+            <Image src={imageSrc} alt={imageAlt} width={350} height={350} className="w-full h-full" />
           </div>
         </div>
       )}
@@ -24,7 +24,7 @@ export default function AwardSection({
       {!isLeft && (
         <div className="flex-shrink-0 pe-12">
           <div className="bg-[#22314a] w-40 h-40 flex items-center justify-center rounded">
-            <Image src={imageSrc} alt={imageAlt} width={150} height={100} className="w-full h-full" />
+            <Image src={imageSrc} alt={imageAlt} width={350} height={350} className="w-full h-full" />
           </div>
         </div>
       )}
