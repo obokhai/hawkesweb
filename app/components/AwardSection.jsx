@@ -12,7 +12,7 @@ export default function AwardSection({
     <div className="flex max-lg:flex-col max-lg:p-2 items-center lg:gap-x-12 lg:px-16 bg-[#f7f9fc] lg:p-10 rounded-lg">
       {isLeft && (
         <div className="flex-shrink-0 ">
-          <div className="bg-[#22314a] lg:w-40 lg:h-40 max-lg:mb-6 flex items-start lg:items-center lg:justify-center lg:pe-12">
+          <div className="bg-[#22314a] w-40 h-40 max-lg:mb-6 flex items-start lg:items-center lg:justify-center lg:pe-12">
             <Image src={imageSrc} alt={imageAlt} width={150} height={100} />
           </div>
         </div>
