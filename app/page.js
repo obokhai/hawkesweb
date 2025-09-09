@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-  <div className="min-h-60 mb-12 relative bg-gradient-to-r py-12 from-[#0D1825] to-[#1F3044] flex px-16">
+  <div className="min-h-60 pb-12 relative bg-gradient-to-r py-12 from-[#0D1825] to-[#1F3044] flex px-16">
     <p className="lg:text-[9px] max-lg:hidden gap-x-8 text-white font-semibold absolute top-0 tracking-widest "> Precise. Swift.   Efficient.</p>
       <div className=" flex justify-between items-center lg:gap-x-24">
         <div className="mt-8 space-y-2 lg:w-2/4 max-lg:text-center">
@@ -28,7 +28,7 @@ export default function Home() {
       {/* <span className="absolute right-0 top-0 w-96 px-6 text-white text-[10px]">Legal issues can feel overwhelming but with the right team by your side, they don’t have to be. At Hawkes Legal, we combine deep legal expertise with a personal, client-first approach to help you navigate life’s challenges with clarity and confidence. We’re here to guide you, advocate for you, and deliver results that matter.</span> */}
     </div>
 
-    <div className="lg:px-16 px-4 py-10 space-y-10 bg-gray-100">
+    <div className="lg:px-16 px-4 py-10 space-y-10 bg-[#EAF1FA80]">
       <AwardSection
         imageSrc="/award.png"
         imageAlt="Award Image"

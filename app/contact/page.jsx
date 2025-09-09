@@ -7,13 +7,13 @@ const Contact = () => {
         <Header title="Contact Us" description="Have  a question or need legal support? We're here to help. Reach out to the Hawkes team to schedule a consultation or get more information about our services." />
         <div className='flex max-lg:flex-col max-lg:items-center lg:mx-auto justify-center gap-x-14 lg:max-w-[700px] py-14 '>
             <div className='flex flex-col gap-y-4 lg:ps-44 w-ful lg:w-1/2 max-lg:mt-5 font-semibold'>
-                <span className='flex gap-x-2 text-xs items-center'><img src='/mail.png' className='size-5' /> info@hawkeslegal.com</span>
+                <span className='flex gap-x-2 text-xs items-center'><img src='/mail.png' className='size-5' /><p className='border-b'> info@hawkeslegal.com</p></span>
                 <span className='flex gap-x-2 text-xs items-center'><img src='/phone.png' className='size-5' /> (+234) 08125540672, 020 1 3427086</span>
             </div>
             <div className='flex flex-col gap-y-3 lg:w-1/2'>
-                 <span className='flex items-center gap-x-2 text-xs  leading-7'><img src='/location.png' className='object-contain size-6' />Hawkes suite, 23A Marina, Mamman Kontagora <br/>
+                 <span className='flex items-center gap-x-2 text-xs font-semibold leading-5'><img src='/location.png' className='object-contain size-6' />Hawkes suite, 23A Marina, Mamman Kontagora <br/>
 House, Lagos, Nigeria.</span>
-                <Link href='https://maps.app.goo.gl/9qH6MDRPAZV7etNa8' className=' ps-10 text-xs capitalize text-red-300'> view on google maps</Link>
+                <Link href='https://maps.app.goo.gl/9qH6MDRPAZV7etNa8' className=' ps-8 text-xs capitalize text-red-300'> view on google maps</Link>
             </div>
         </div>
         <section className='flex mb-4 flex-col items-center justify-center gap-y-2 mt-6'>
@@ -21,16 +21,16 @@ House, Lagos, Nigeria.</span>
             <p className='text-[#BF9874] text-xs tracking-[0.2rem] mt-2'>We would get back to you</p>
             <form className="w-full lg:max-w-2xl max-w-lg mx-auto mt-10 flex flex-col gap-y-6 lg:mb-12">
           <div className="flex gap-x-8 max-lg:flex-col">
-            <div className="flex-1 flex border-b border-[#BF9874] max-lg:mb-3 lg:max-h-8 flex-col">
-              <label className="text-xs italic font-semibold text-gray-500 mb-1 ps-2">Full Name</label>
+            <div className="flex-1 flex border-b border-[#BF9874] max-lg:mb-3  lg:max-h-12 flex-col">
+              <label className="text-xs italic font-semibold text-gray-500 mb-1">Full Name</label>
               <input
                 type="text"
-                className="border-none border-b-2 border-black focus:outline-none px-2 py-2 bg-transparent"
+                className="border-none focus:outline-none bg-transparent"
                 placeholder=""
               />
             </div>
-            <div className="flex-1 border-b border-[#BF9874] max-lg:mb-3 lg:max-h-8 flex flex-col">
-              <label className="text-xs italic font-semibold text-gray-500 mb-1 ps-2">Email</label>
+            <div className="flex-1 border-b border-[#BF9874] max-lg:mb-3 lg:max-h-12 flex flex-col">
+              <label className="text-xs italic font-semibold text-gray-500 mb-1">Email</label>
               <input
                 type="email"
                 className="border-none border-b border-black focus:outline-none px-2 py-2 bg-transparent"
@@ -39,26 +39,26 @@ House, Lagos, Nigeria.</span>
             </div>
           </div>
           <div className="flex flex-col border-b border-[#BF9874] max-lg:mb-3 lg:max-h-16">
-            <label className="text-xs italic font-semibold text-gray-500 mb-1 ps-2">Subject</label>
-            <select className="border-none border-b text-xs border-black focus:outline-none px-2 py-2 bg-transparent">
+            <label className="text-xs italic font-semibold text-gray-500 mb-1">Subject</label>
+            <select className="border-none border-b text-xs border-black focus:outline-none py-2 bg-transparent">
               <option value=""></option>
               <option value="consultation">Consultation</option>
               <option value="case">Case Inquiry</option>
               <option value="other">Other</option>
             </select>
           </div>
-          <div className="flex flex-col border-b border-[#BF9874] max-lg:mb-3 lg:max-h-16">
-            <label className="text-xs italic font-semibold text-gray-500 mb-1 ps-2">Message</label>
+          <div className="flex flex-col border-b border-[#BF9874] max-lg:mb-3 lg:max-h-28">
+            <label className="text-xs italic font-semibold text-gray-500 mb-2">Message</label>
             <textarea
-              rows={3}
-              className="border-none border-b border-black focus:outline-none focus:border-[#CB935D] px-2 py-2 bg-transparent resize-none"
+              rows="4"
+              className="border-none border-b min-h-20 border-black focus:outline-none focus:border-[#CB935D] resize-none py-2 bg-transparent"
               placeholder=""
             />
           </div>
           <div className="flex justify-center mt-4">
             <button
               type="submit"
-              className="border border-[#22314a] lg:h-10 lg:w-44 text-[#22314a] font-semibold text-xs uppercase bg-white hover:bg-[#f7f9fc] transition"
+              className="border border-[#22314a] lg:h-16 lg:w-80 text-[#22314a] font-semibold text-sm uppercase bg-white hover:bg-[#f7f9fc] transition"
             >
               Submit
             </button>

@@ -9,7 +9,7 @@ export default function AwardSection({
 }) {
   const isLeft = imagePosition === "left";
   return (
-    <div className="flex max-lg:flex-col max-lg:p-2 items-center lg:gap-x-12 lg:px-16 bg-[#f7f9fc] lg:p-10 rounded-lg">
+    <div className="flex max-lg:flex-col max-lg:p-2 items-center lg:gap-x-12 lg:px-16 lg:p-10 rounded-lg">
       {isLeft && (
         <div className="flex-shrink-0 ">
           {/* <div className="bg-[#22314a] w-40 h-40 max-lg:mb-6 flex items-start lg:items-center lg:justify-center lg:pe-12"> */}
