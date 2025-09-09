@@ -21,12 +21,6 @@ const TeamHeader = ({  title,
         />
         <span className='flex justify-center items-center gap-x-4'>
             <h4 className='text-white text-6xl mx-auto text-center leading-16 heading font-serif font-semibold'>{title}</h4>
-              {/* {showBorder && (
-          <div className={`mx-8 ${borderHeight} border-l max-lg:hidden ${borderColor}`}></div>
-        )} */}
-           {/* <div className="flex-1 max-lg:hidden">
-          <p className="text-white text-[10px] w-[400px] tracking-wider leading-6">{description}</p>
-        </div> */}
         </span>
     </div>
   )
